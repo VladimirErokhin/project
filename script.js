@@ -21,7 +21,9 @@
 
   Проверить, чтобы всё было без ошибок */
 
-const numberOfFilms = ('Сколько фильмов вы уже посмотрели?');
+const numberOfFilms = +prompt(`Сколько фильмов вы уже посмотрели?`, '');
+
+console.log(numberOfFilms);
 
 const personalMoveDB = {
     count: numberOfFilms,
